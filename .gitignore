@@ -1,23 +1,37 @@
-# OS files
-.DS_Store
-Thumbs.db
-
-# Python
+# Python virtual environments & packages
+.venv/
+venv/
+ENV/
+env/
 __pycache__/
 *.py[cod]
 *$py.class
-venv/
+
+# Testing and linting caches
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Environment and secrets
 .env
 .env.*
+secrets.yml
+*/secrets.yml
 
-# IDE / Editor
+# IDE & editors
 .vscode/
 .idea/
 *.sublime-workspace
 *.sublime-project
 
-# Terraform
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Terraform state and secret files
 *.tfstate
+*.tfstate.*
 *.tfstate.backup
 .terraform/
 .terraform/**
@@ -30,23 +44,18 @@ override.tf.json
 *_override.tf.json
 .terraformrc
 terraform.rc
-.terraform.lock.hcl
+*.tfvars
+*.auto.tfvars
 
 # AWS Lambda local artifacts
 *.zip
 
-# local runtime logs and temp
+# Local runtime logs and temporary files
 *.log
 *.tmp
-
-# keep secrets out
-secrets.yml
-*/secrets.yml
-
-# Ignore generated files
 *.out
 
-# Optional: if using node/npm in some module
+# Node dependencies (if any)
 node_modules/
 package-lock.json
 npm-debug.log
