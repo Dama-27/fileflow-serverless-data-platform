@@ -1,6 +1,6 @@
 # CSV Schema Definitions
 
-This document defines the schema specifications and sample data rules for CSV datasets processed by **DataPulse – Serverless Data Processing Platform**.
+This document defines the schema specifications and sample data rules for CSV datasets processed by **FileFlow – Serverless Data Processing Platform**.
 
 ---
 

@@ -1,7 +1,7 @@
 """Tests for initial project setup and sample CSV datasets.
 
 These tests verify package importability, existence of sample data files,
-and correctness of CSV column headers for DataPulse Day 1.
+and correctness of CSV column headers for FileFlow Day 1.
 """
 
 import csv
@@ -23,14 +23,14 @@ def get_csv_headers(file_path: Path) -> list[str]:
         return next(reader)
 
 
-# Tests that the datapulse package can be imported successfully.
-def test_datapulse_package_import() -> None:
-    """Verify that the datapulse package can be imported and has a valid version."""
-    import datapulse
+# Tests that the fileflow package can be imported successfully.
+def test_fileflow_package_import() -> None:
+    """Verify that the fileflow package can be imported and has a valid version."""
+    import fileflow
 
-    assert hasattr(datapulse, "__version__")
-    assert isinstance(datapulse.__version__, str)
-    assert len(datapulse.__version__) > 0
+    assert hasattr(fileflow, "__version__")
+    assert isinstance(fileflow.__version__, str)
+    assert len(fileflow.__version__) > 0
 
 
 # Tests that all required sample CSV files exist in the repository.

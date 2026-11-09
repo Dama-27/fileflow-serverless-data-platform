@@ -1,4 +1,4 @@
-# DataPulse – Serverless Data Processing Platform
+# FileFlow – Serverless Data Processing Platform
 
 > **Project Stage:** Day 1 – Initial Development & Environment Setup  
 > **Notice:** The AWS infrastructure and serverless processing logic are not yet implemented. This project is in its foundational setup phase.
@@ -7,7 +7,7 @@
 
 ## 1. Project Overview
 
-**DataPulse** is a scalable, cloud-native serverless data processing platform being developed on Amazon Web Services (AWS). DataPulse enables users to upload structured CSV files, select a predefined data processing task, and obtain structured processing metrics and results via REST APIs.
+**FileFlow** is a scalable, cloud-native serverless data processing platform being developed on Amazon Web Services (AWS). FileFlow enables users to upload structured CSV files, select a predefined data processing task, and obtain structured processing metrics and results via REST APIs.
 
 The platform processes datasets asynchronously, decouples ingestion from heavy processing, and provides a cost-effective, event-driven architecture.
 
@@ -21,7 +21,7 @@ Organizations regularly ingest high volumes of tabular data (e.g., daily sales s
 - **Traditional server servers are costly:** Keeping 24/7 provisioned servers for periodic batch uploads is expensive and hard to scale.
 - **Lack of asynchronous feedback:** Direct file uploads to web servers often time out on larger files or complex calculations.
 
-**DataPulse** addresses these challenges using an event-driven serverless architecture that scales automatically from zero, charges only for execution time, and decouples ingestion from compute.
+**FileFlow** addresses these challenges using an event-driven serverless architecture that scales automatically from zero, charges only for execution time, and decouples ingestion from compute.
 
 ---
 
@@ -37,7 +37,7 @@ Organizations regularly ingest high volumes of tabular data (e.g., daily sales s
 
 ## 4. Supported Processing Tasks
 
-Initially, DataPulse will support three core processing tasks:
+Initially, FileFlow will support three core processing tasks:
 
 1. **Sales Analysis:**
    - Aggregates transaction records.
@@ -74,10 +74,10 @@ Initially, DataPulse will support three core processing tasks:
 ## 6. Initial Project Structure
 
 ```text
-datapulse-serverless-data-platform/
+fileflow-serverless-data-platform/
 │
 ├── src/
-│   └── datapulse/
+│   └── fileflow/
 │       └── __init__.py           # Package root and version metadata
 │
 ├── tests/
@@ -173,7 +173,7 @@ pip install pytest ruff
 
 ## 10. Testing and Code Quality Instructions
 
-DataPulse uses `pytest` for tests and `Ruff` for linting and code formatting.
+FileFlow uses `pytest` for tests and `Ruff` for linting and code formatting.
 
 ### Running Tests
 

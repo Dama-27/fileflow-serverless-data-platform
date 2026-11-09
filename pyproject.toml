@@ -3,13 +3,13 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "datapulse"
+name = "fileflow"
 version = "0.1.0"
-description = "DataPulse - Serverless Data Processing Platform"
+description = "FileFlow - Serverless Data Processing Platform"
 readme = "README.md"
 requires-python = ">=3.12"
 authors = [
-    { name = "DataPulse Contributors" },
+    { name = "FileFlow Contributors" },
 ]
 dependencies = []
 
