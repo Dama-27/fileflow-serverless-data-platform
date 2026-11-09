@@ -1,0 +1,6 @@
+order_id,order_date,product_id,product_name,quantity,unit_price
+1001,2026-01-10,PROD-001,Laptop,2,150000
+1002,2026-01-11,PROD-002,Mouse,5,2500
+1003,2026-01-12,PROD-001,Laptop,1,150000
+1004,2026-01-13,PROD-003,Keyboard,3,5000
+1005,2026-01-14,PROD-002,Mouse,2,2500

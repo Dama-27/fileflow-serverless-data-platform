@@ -1,0 +1,7 @@
+product_id,product_name,stock_quantity,reorder_level
+INV-001,Laptop Stand,45,20
+INV-002,Mechanical Keyboard,8,15
+INV-003,Wireless Mouse,5,25
+INV-004,USB-C Hub,60,30
+INV-005,HDMI Cable,12,20
+INV-006,Monitor Arm,30,10

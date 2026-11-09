@@ -1,0 +1,6 @@
+order_id,product_name,quantity,unit_price
+ORD-1001,Laptop,1,150000
+ORD-1002,Mouse,,2500
+ORD-1003,Keyboard,-2,5000
+ORD-1001,Monitor,1,45000
+ORD-1005,Headphones,3,-1200
