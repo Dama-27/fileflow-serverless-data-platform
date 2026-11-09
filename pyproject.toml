@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "datapulse"
+version = "0.1.0"
+description = "DataPulse - Serverless Data Processing Platform"
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [
+    { name = "DataPulse Contributors" },
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "ruff>=0.8.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+addopts = "-v"
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 88
+src = ["src", "tests"]
+extend-exclude = ["lambdas", "infrastructure"]
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # pyflakes
+    "I",   # isort
+]
+ignore = []
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "auto"
